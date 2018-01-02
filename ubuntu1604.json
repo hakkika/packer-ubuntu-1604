@@ -18,6 +18,11 @@
     {
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "script": "scripts/upgrade.sh"
+    },
+    {
+      "type": "shell",
+      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "script": "scripts/cleanup.sh"
     }
   ],
@@ -36,7 +41,7 @@
         " console-setup/modelcode=pc105<wait>",
         " debconf/frontend=noninteractive<wait>",
         " debian-installer=en_US<wait>",
-        " fb=true<wait>",
+        " fb=false<wait>",
         " initrd=/install/initrd.gz<wait>",
         " kbd-chooser/method=fi<wait>",
         " keyboard-configuration/layout=fi<wait>",
@@ -74,13 +79,13 @@
           "modifyvm",
           "{{.Name}}",
           "--memory",
-          "1024"
+          "4096"
         ],
         [
           "modifyvm",
           "{{.Name}}",
           "--cpus",
-          "1"
+          "4"
         ]
       ]
     }
