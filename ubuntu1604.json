@@ -41,7 +41,7 @@
         " console-setup/modelcode=pc105<wait>",
         " debconf/frontend=noninteractive<wait>",
         " debian-installer=en_US<wait>",
-        " fb=false<wait>",
+        " fb=true<wait>",
         " initrd=/install/initrd.gz<wait>",
         " kbd-chooser/method=fi<wait>",
         " keyboard-configuration/layout=fi<wait>",

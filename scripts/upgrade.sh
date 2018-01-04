@@ -6,4 +6,4 @@ apt update
 apt install -y build-essential gcc make linux-headers-generic-hwe-16.04
 apt upgrade -y
 
-apt-get -y install xubuntu-core^ xfce4-taskmanager xfce4-systemload-plugin gedit xarchiver install firefox chromium-browser
+apt install -y xubuntu-core^ xfce4-taskmanager xfce4-systemload-plugin gedit xarchiver firefox chromium-browser
